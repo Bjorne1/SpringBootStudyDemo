@@ -1,0 +1,14 @@
+#自定义端口号为4396
+server:
+  port: 4396
+#配置文件注入
+person:
+  name: wcs
+  age: 24
+  map: {k1: v1,k2: v2}
+  list:
+    - list1
+    - list2
+  dog:
+    name: Huang
+    age: 3
