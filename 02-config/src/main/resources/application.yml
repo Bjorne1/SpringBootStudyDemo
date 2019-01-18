@@ -3,7 +3,7 @@ server:
   port: 4396
 #配置文件注入
 person:
-  name: wcs
+  name: wcs${random.int} #随机数。。
   age: 24
   map: {k1: v1,k2: v2}
   list:
