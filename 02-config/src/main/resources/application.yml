@@ -1,4 +1,5 @@
-#自定义端口号为4396
+#外部配置加载顺序参考官方文档
+#https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/#boot-features-external-config
 server:
   port: 4396
 #配置文件注入
@@ -12,3 +13,19 @@ person:
   dog:
     name: Huang
     age: 3
+spring:
+  profiles:
+    active: dev #此时端口号为8081
+
+---
+#可以有多份配置，使用active激活对应配置
+server:
+     port: 8081
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8082
+spring:
+  profiles: prod
