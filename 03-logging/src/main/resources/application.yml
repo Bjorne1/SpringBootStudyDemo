@@ -1,0 +1,9 @@
+#trace: true #将日志级别调整为trace
+##spring boot底层使用slf4j+logback的方式记录日志
+#logging:
+#  path:
+#  pattern:
+#    #日志在控制台中的输出格式,yml会报格式错误。。properties不会。。
+#    console: %clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){yellow}
+#    #日志在文件中的输出格式
+#    file: %clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){yellow}
