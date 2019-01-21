@@ -1,0 +1,5 @@
+dubbo:
+  application:
+    name: dubbo-consume
+  registry:
+    address: zookeeper://localhost:2181 #zookeeper注册中心地址

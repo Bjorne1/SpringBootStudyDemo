@@ -1,0 +1,7 @@
+dubbo:
+  application:
+    name: dubbo-provide
+  registry:
+    address: zookeeper://localhost:2181 #zookeeper注册中心地址
+  scan:
+    base-packages: com.example.dubboprovider #需要发布的内容
