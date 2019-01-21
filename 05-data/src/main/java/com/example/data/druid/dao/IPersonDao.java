@@ -12,6 +12,6 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface IPersonDao {
 
-    @Select("SELECT id,user_name,age FROM User WHERE id = #{id}")
+    @Select("SELECT id,user_name,age FROM user WHERE id = #{id}")
     Person getById(String id);
 }
