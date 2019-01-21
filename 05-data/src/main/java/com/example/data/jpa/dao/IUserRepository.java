@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Author: WenChangSheng
  * @Date: Created in 2019/1/21 11:13
  */
-public interface IUserResposity extends JpaRepository<User, Integer> {
+public interface IUserRepository extends JpaRepository<User, Integer> {
 
     /**
      * 表面设置了User，但是console显示未找到my_test.user,为啥还是小写。。

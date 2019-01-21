@@ -3,7 +3,7 @@ package com.example.data;
 import com.example.data.druid.bean.Person;
 import com.example.data.druid.service.PersonService;
 import com.example.data.jpa.bean.User;
-import com.example.data.jpa.dao.IUserResposity;
+import com.example.data.jpa.dao.IUserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ApplicationTests {
 
     @Autowired
-    public IUserResposity userResposity;
+    public IUserRepository userResposity;
     @Autowired
     private PersonService personService;
 
