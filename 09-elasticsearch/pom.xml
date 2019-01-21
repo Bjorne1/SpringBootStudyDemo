@@ -29,6 +29,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--引入springboot-data操作-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+        <!--引入jest操作elasticsearch-->
+        <!-- https://mvnrepository.com/artifact/io.searchbox/jest -->
+        <dependency>
+            <groupId>io.searchbox</groupId>
+            <artifactId>jest</artifactId>
+            <version>5.3.4</version>
+        </dependency>
     </dependencies>
 
     <build>
