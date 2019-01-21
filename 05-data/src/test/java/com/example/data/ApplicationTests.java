@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ApplicationTests {
 
     @Autowired
-    public IUserRepository userResposity;
+    public IUserRepository userRepository;
     @Autowired
     private PersonService personService;
 
@@ -27,7 +27,7 @@ public class ApplicationTests {
 
     @Test
     public void jpaTest() {
-        User user = userResposity.getUserByAge(3);
+        User user = userRepository.getUserByAge(3);
         System.out.println(user);
     }
 
