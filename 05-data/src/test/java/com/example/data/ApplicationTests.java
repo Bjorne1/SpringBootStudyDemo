@@ -2,7 +2,6 @@ package com.example.data;
 
 import com.example.data.druid.bean.Person;
 import com.example.data.druid.service.PersonService;
-import com.example.data.jpa.bean.User;
 import com.example.data.jpa.dao.IUserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,8 +26,14 @@ public class ApplicationTests {
 
     @Test
     public void jpaTest() {
-        User user = userRepository.getUserByAge(3);
-        System.out.println(user);
+        //User user = userRepository.getUserByAge(3);
+//        User user2 = new User();
+//        user2.setId(2);
+//        user2.setAge(6);
+//        user2.setUserName("赵子龙");
+//        userRepository.save(user2);
+//        System.out.println(user2);
+        System.out.println(userRepository.findUserByUserNameAndAge("赵子龙", 6));
     }
 
 }

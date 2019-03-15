@@ -16,4 +16,6 @@ public interface IUserRepository extends JpaRepository<User, Integer> {
      * @param age 年龄
      */
     User getUserByAge(Integer age);
+
+    User findUserByUserNameAndAge(String userName, int age);
 }

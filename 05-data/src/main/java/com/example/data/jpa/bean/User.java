@@ -1,9 +1,6 @@
 package com.example.data.jpa.bean;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @Description:
@@ -15,7 +12,7 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    private String id;
+    private int id;
 
     @Column(name = "user_name")
     private String userName;
@@ -23,11 +20,11 @@ public class User {
     @Column(name = "age")
     private int age;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
